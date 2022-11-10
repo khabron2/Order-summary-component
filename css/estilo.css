@@ -3,7 +3,7 @@
 :root{
 --Pale-blue: hsl(225, 100%, 94%);
 --Bright-blue: hsl(245, 75%, 52%);
---Very-pale-blue: hsl(225, 100%, 98%);
+--Very-pale-blue: hsl(220, 16%, 96%);
 --Desaturated-blue: hsl(224, 23%, 55%);
 --Dark-blue: hsl(223, 47%, 23%);
 }
@@ -18,18 +18,20 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
     font-size: 14px;
-    background-color: var(--Desaturated-blue);
+    background-color: var(--Pale-blue);
     background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .container{
     width: 328px;
     height: 570px;
-    border: 1px solid red;
     border-radius: 20px;
     overflow: hidden;
-    margin: 70px auto;
-    background-color: var(--Very-pale-blue);
+    margin: 80px auto 30px;
+    background-color: white;
 }
 
 .imagen{
@@ -57,6 +59,48 @@ p{
     text-align: center;
 }
 
+.precios{
+    height: 80px;
+    width: 280px;
+    background-color:#f8f9fd;
+    border-radius: 5px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .descripcion{
+    color: var(--Desaturated-blue);
+    margin-bottom: 30px;
+}
+
+.icono{
+    background-image: url(../images/icon-music.svg);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.boton{
+    height: 50px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #382ae3;
+    color: #f8f9fd;
+    border-radius: 10px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+}
+
+.cancelar{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
